@@ -15,5 +15,7 @@ COPY templates/index.html /usr/src/app/templates/
 # tell the port number the container should expose
 EXPOSE 80
 
+ENV SERVER_PORT=80
+
 # run the application
 CMD ["python", "/usr/src/app/app.py"]
